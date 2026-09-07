@@ -1,0 +1,58 @@
+name: 4-Way Traffic Signal Controller
+slug: 4-way-traffic-signal-controller
+
+category: experiments
+subcategory: "Digital Logic Design coursework"
+
+status: completed
+
+visibility: public
+
+description:
+  short: "An NE555-timer and D-flip-flop-based 4-way traffic signal controller, verified in Proteus simulation and on physical hardware."
+  long: |
+    A 4-way traffic signal controller built entirely from discrete digital
+    logic: an NE555 astable timer providing a ~1Hz clock, a 4-bit D-flip-flop
+    counter cycling through 16 states, and combinational logic decoding
+    those states into 12 LED outputs (red/yellow/green per road). A full
+    cycle takes 16 seconds (4 seconds per road: 3s green + 1s yellow).
+    Verified both in Proteus simulation and on a physical breadboard/LED
+    prototype. Built for a Digital Logic Design course (Air University,
+    Semester 2, Spring 2024).
+
+technologies: ["Proteus", "NE555 timer", "Digital logic (D flip-flops)"]
+tags: ["experiments", "digital-logic", "hardware", "circuit-design"]
+
+repository:
+  provider: github
+  visibility: public
+  sync: true
+
+portfolio:
+  enabled: true
+  featured: false
+
+documentation:
+  readme: true
+  case_study: false
+
+dates:
+  started: null
+  completed: null
+
+links:
+  github: null
+  demo: null
+  documentation: null
+
+assets:
+  hero: null
+  screenshots:
+    - screenshots
+
+achievements: []
+
+metrics:
+  - label: "Verification checklist items passed"
+    value: "all (timer period, road sequencing, hardware confirmation)"
+    verified: true
