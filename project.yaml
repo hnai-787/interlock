@@ -1,5 +1,5 @@
-name: 4-Way Traffic Signal Controller
-slug: 4-way-traffic-signal-controller
+name: SignalPulse
+slug: signalpulse
 
 category: experiments
 subcategory: "Digital Logic Design coursework"

@@ -1,4 +1,4 @@
-# 4-Way Traffic Signal Controller
+# SignalPulse — 4-Way Traffic Signal Controller
 
 ## Course Information
 
