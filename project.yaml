@@ -17,8 +17,11 @@ description:
     those states into 12 LED outputs (red/yellow/green per road). A full
     cycle takes 16 seconds (4 seconds per road: 3s green + 1s yellow).
     Verified both in Proteus simulation and on a physical breadboard/LED
-    prototype. Built for a Digital Logic Design course (Air University,
-    Semester 2, Spring 2024).
+    prototype, plus a programmatic cross-check of every simplified
+    Boolean equation against the truth table (0 mismatches across all 16
+    states) and of the no-double-green safety property (0 violations).
+    Includes a timed live-demo script (DEMO.md). Built for a Digital
+    Logic Design course (Air University, Semester 2, Spring 2024).
 
 technologies: ["Proteus", "NE555 timer", "Digital logic (D flip-flops)"]
 tags: ["experiments", "digital-logic", "hardware", "circuit-design"]
@@ -30,7 +33,7 @@ repository:
 
 portfolio:
   enabled: true
-  featured: false
+  featured: true
 
 documentation:
   readme: true
@@ -55,4 +58,10 @@ achievements: []
 metrics:
   - label: "Verification checklist items passed"
     value: "all (timer period, road sequencing, hardware confirmation)"
+    verified: true
+  - label: "Boolean equations matching truth table (programmatic cross-check, all 16 states)"
+    value: "16/16, 0 mismatches"
+    verified: true
+  - label: "No-double-green safety property (programmatic check, all 16 states)"
+    value: "0 violations"
     verified: true

@@ -55,6 +55,8 @@ red/yellow/green cycle across four roads.
   README.md
   PROJECT_NOTES.md
   REPORT.md
+  DEMO.md          a timed live-demo script (what to show, in what order)
+  CHANGELOG.md
   design/4way-signal-truth-table.xlsx
   proteus/
     FourWayTrafficSignal_Recreated.pdsprj
@@ -78,9 +80,11 @@ reconstruction guide to build and observe the physical breadboard version.
 ## How to Review
 
 1. Start with this README and `REPORT.md`.
-2. Review `design/4way-signal-truth-table.xlsx` — the full state table (all 16 states → road outputs).
+2. Review `design/4way-signal-truth-table.xlsx` — the full state table (all 16 states → road outputs), including the derived Boolean equations for each output.
 3. Open the Proteus project or follow the reconstruction guide.
 4. Check `screenshots/` and `media/` for simulation and hardware evidence.
+5. See `DEMO.md` for a ready-to-run live demo script — useful for
+   presenting this project directly rather than just reading about it.
 
 ## Screenshots
 
@@ -91,7 +95,13 @@ See `screenshots/` (8 images: Proteus modules, running states, hardware) and `me
 A full state table (states 0–15 mapped to road states) and a verification
 checklist were completed with every item passing: correct ~1s timer period
 (calculated ≈0.998s), correct road sequencing, and confirmed matching
-behavior on physical hardware.
+behavior on physical hardware. The design was additionally verified
+analytically: every simplified Boolean equation in the truth-table
+spreadsheet was checked programmatically against its own recorded output
+across all 16 states (0 mismatches), and the full state table was checked
+for the one safety property that matters even in an educational design —
+no state ever shows more than one road green at the same time (also
+confirmed, 0 violations). See `REPORT.md` §11 for the full breakdown.
 
 ## Limitations
 
@@ -102,6 +112,15 @@ behavior on physical hardware.
 
 - Add a pedestrian-crossing phase.
 - Add a microcontroller-based variant for comparison with the discrete-logic version.
+- Adaptive/traffic-responsive timing was considered as an enhancement
+  direction and deliberately deferred: a discrete counter-and-decoder
+  circuit has no way to accept outside input, so real adaptivity would
+  require a fundamentally different architecture (a microcontroller or
+  FPGA reading vehicle sensors), not a modification of this circuit.
+  Bolting a software adaptive-timing layer onto this project wouldn't
+  demonstrate more digital-logic/hardware skill — it would just be an
+  unrelated software project stapled to this one. See `DEMO.md` for how
+  this is explained live.
 
 ## Safety and Privacy
 

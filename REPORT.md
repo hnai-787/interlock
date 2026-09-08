@@ -388,12 +388,26 @@ The design was verified through both simulation and hardware evidence.
 | Repeating cycle | Sequence restarts after full cycle | Yes |
 | Proteus simulation | Circuit modules run correctly | Yes |
 | Hardware evidence | LED outputs demonstrate working behavior | Yes |
+| Boolean equations reproduce the truth table | Every simplified equation in `design/4way-signal-truth-table.xlsx` matches its column for all 16 states | Yes — checked programmatically, 0 mismatches |
+| No-double-green safety property | At most one road shows green in any state | Yes — checked programmatically across all 16 states |
 
 ### Result Summary
 
 The Proteus simulation successfully demonstrated the planned state sequence. The timer generated clock pulses, the counter advanced through the binary states, and the traffic logic activated the appropriate LEDs.
 
 The hardware evidence also confirmed that the design was practically implemented and that the LED outputs followed the intended signal pattern.
+
+Beyond the original simulation/hardware cross-check, the design was
+additionally verified analytically: the simplified Boolean equation for
+every output signal (`R1`/`Y1`/`G1` … `R4`/`Y4`/`G4`) was evaluated
+against the counter inputs (`A`,`B`,`C`,`D`) for all 16 states and
+compared against the truth table's own recorded outputs — a perfect
+match with zero discrepancies. The same data was also checked for the
+one property that actually matters for real-world safety even in an
+educational design: no state ever activates more than one road's green
+signal at the same time. Both checks confirm the logic design is
+internally consistent, not just that the simulation happened to look
+right.
 
 ---
 
