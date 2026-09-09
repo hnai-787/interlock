@@ -1,5 +1,5 @@
-name: SignalPulse
-slug: signalpulse
+name: Interlock
+slug: interlock
 
 category: experiments
 subcategory: "Digital Logic Design coursework"
@@ -44,12 +44,12 @@ dates:
   completed: null
 
 links:
-  github: https://github.com/Hussain-Ali-787/signalpulse
+  github: https://github.com/Hussain-Ali-787/interlock
   demo: null
   documentation: null
 
 assets:
-  hero: assets/brand/signalpulse-readme-banner.png
+  hero: assets/brand/interlock-readme-banner.png
   screenshots:
     - screenshots
 

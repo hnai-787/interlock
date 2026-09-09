@@ -1,6 +1,6 @@
-# SignalPulse — 4-Way Traffic Signal Controller
+# Interlock — 4-Way Traffic Signal Controller
 
-![signalpulse banner](assets/brand/signalpulse-readme-banner.png)
+![interlock banner](assets/brand/interlock-readme-banner.png)
 
 
 ## Course Information
@@ -53,7 +53,7 @@ red/yellow/green cycle across four roads.
 
 ## How It Works
 
-![How signalpulse works](assets/brand/signalpulse-how-it-works.png)
+![How interlock works](assets/brand/interlock-how-it-works.png)
 
 ## Repository Structure
 
