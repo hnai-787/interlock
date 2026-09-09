@@ -2,7 +2,7 @@ name: Interlock
 slug: interlock
 
 category: experiments
-subcategory: "Digital Logic Design coursework"
+subcategory: "Digital Logic Design"
 
 status: completed
 
@@ -20,8 +20,7 @@ description:
     prototype, plus a programmatic cross-check of every simplified
     Boolean equation against the truth table (0 mismatches across all 16
     states) and of the no-double-green safety property (0 violations).
-    Includes a timed live-demo script (DEMO.md). Built for a Digital
-    Logic Design course (Air University, Semester 2, Spring 2024).
+    Includes a timed live-demo script (DEMO.md).
 
 technologies: ["Proteus", "NE555 timer", "Digital logic (D flip-flops)"]
 tags: ["experiments", "digital-logic", "hardware", "circuit-design"]

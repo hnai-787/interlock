@@ -3,15 +3,6 @@
 ![interlock banner](assets/brand/interlock-readme-banner.png)
 
 
-## Course Information
-
-| Field | Details |
-|---|---|
-| Course | Digital Logic Design |
-| Semester | Semester 2 — Spring 2024 |
-| University | Air University, Islamabad |
-| Student | Hussain Ali (232095) |
-
 ## Overview
 
 A 4-way traffic signal controller built from discrete digital logic — an
@@ -136,4 +127,4 @@ digital-logic hardware exercise.
 
 ## Ethical Notice
 
-Academic coursework exercise; no ethical concerns apply.
+Personal project; no ethical concerns apply.
