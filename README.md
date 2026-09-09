@@ -1,5 +1,8 @@
 # SignalPulse — 4-Way Traffic Signal Controller
 
+![signalpulse banner](assets/brand/signalpulse-readme-banner.png)
+
+
 ## Course Information
 
 | Field | Details |
@@ -47,6 +50,10 @@ red/yellow/green cycle across four roads.
 2. Design the D-flip-flop counter and state-to-output decoding logic.
 3. Build and verify the circuit in Proteus.
 4. Rebuild on a physical breadboard and confirm matching behavior.
+
+## How It Works
+
+![How signalpulse works](assets/brand/signalpulse-how-it-works.png)
 
 ## Repository Structure
 

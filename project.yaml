@@ -49,7 +49,7 @@ links:
   documentation: null
 
 assets:
-  hero: null
+  hero: assets/brand/signalpulse-readme-banner.png
   screenshots:
     - screenshots
 
