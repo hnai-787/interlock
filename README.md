@@ -49,7 +49,7 @@ red/yellow/green cycle across four roads.
 ## Repository Structure
 
 ```text
-4-way-traffic-signal-controller/
+interlock/
   README.md
   PROJECT_NOTES.md
   REPORT.md
